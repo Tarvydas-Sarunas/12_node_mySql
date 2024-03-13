@@ -5,14 +5,14 @@ import cors from 'cors';
 // import mysql from 'mysql2';
 import tripsRouter from './routes/tripRoutes.js';
 import { PORT, dbConfig } from './config.js';
-import testConnection from './helpers/testRoutes.js';
+// import testConnection from './helpers/testRoutes.js';
 
 const app = express();
 
 const port = PORT || 5000;
 console.log(' dbConfig ===', dbConfig);
 
-testConnection();
+// testConnection();
 
 // Middlewere
 app.use(morgan('dev'));
